@@ -27,7 +27,6 @@ def get_kmeans_clusters(dataset, K):
     max_step = 100;
     threshold = 0.001;
     step = 0;
-    old_
     while true:
         step += step;
         old_centroids = centroids;
@@ -37,6 +36,7 @@ def get_kmeans_clusters(dataset, K):
             break;
     
     
+    
 
 def get_label(centroids, datset):
     #calculate the the distnce between each point and centroids
@@ -44,9 +44,11 @@ def get_label(centroids, datset):
     #this point
      n = len(dataset)
      label = numpy.zeros(n,1);
+     label = numpy.array([np.argmin(np.sqrt((point-centroids)**2).sum(axis=1))) for point in dataset]);
         
         
 def get_centroids(dataset, label, k):
+    return centroids = np.array([dataset[label==k]].mean(axis=0) for k in range(k)]);
     
     
     

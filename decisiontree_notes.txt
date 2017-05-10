@@ -1,0 +1,9 @@
+ID3
+c4.5
+CART - classification and Regression Tree
+re-enforcement learning - it has labels one by one, demand based learning, where the machine asks hey can you give me the label of the vector so that i can learn the it 
+better
+
+hunts algorithm
+
+
